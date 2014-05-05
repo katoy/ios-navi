@@ -1,5 +1,5 @@
 //
-//  NaviViewController.h
+//  MapCourseViewController.h
 //  navi
 //
 //  Created by katoy on 2014/05/05.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NaviViewController : UIViewController
+@interface MapCourseViewController : UIViewController
 
 @end
