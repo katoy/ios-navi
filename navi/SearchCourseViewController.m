@@ -9,10 +9,10 @@
 #import "SearchCourseViewController.h"
 
 @interface SearchCourseViewController ()
-
 @end
 
 @implementation SearchCourseViewController
+@synthesize webView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSURL *url = [NSURL URLWithString:@"http://www.google.co.jp"];
+    NSURLRequest *requestURL = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:requestURL];
 }
 
 - (void)didReceiveMemoryWarning

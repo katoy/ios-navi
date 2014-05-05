@@ -21,11 +21,13 @@
 		C08E1F7E191708CB00EA702C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C08E1F7C191708CB00EA702C /* InfoPlist.strings */; };
 		C08E1F80191708CB00EA702C /* naviTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C08E1F7F191708CB00EA702C /* naviTests.m */; };
 		C08E1F8A19170AC800EA702C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C08E1F8919170AC800EA702C /* README.md */; };
-		C08E1F8D1917102700EA702C /* RootViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08E1F8C1917102700EA702C /* RootViewControllerTableViewController.m */; };
-		C08E1F901917115500EA702C /* SubMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08E1F8F1917115500EA702C /* SubMenuViewController.m */; };
-		C08E1F931917120900EA702C /* SearchCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08E1F921917120900EA702C /* SearchCourseViewController.m */; };
 		C08E1F961917122300EA702C /* MapCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08E1F951917122300EA702C /* MapCourseViewController.m */; };
 		C08E1F991917123E00EA702C /* CalendarCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08E1F981917123E00EA702C /* CalendarCourseViewController.m */; };
+		C08E1FA019179F9000EA702C /* RootViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08E1F9F19179F9000EA702C /* RootViewControllerTableViewController.m */; };
+		C08E1FA61917A44F00EA702C /* SearchCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08E1FA51917A44F00EA702C /* SearchCourseViewController.m */; };
+		C0F1E8D41917C6D500E8F408 /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F1E8D11917C6D500E8F408 /* google.png */; };
+		C0F1E8D51917C6D500E8F408 /* root-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F1E8D21917C6D500E8F408 /* root-menu.png */; };
+		C0F1E8D61917C6D500E8F408 /* storyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F1E8D31917C6D500E8F408 /* storyboard.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +59,17 @@
 		C08E1F7D191708CB00EA702C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C08E1F7F191708CB00EA702C /* naviTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = naviTests.m; sourceTree = "<group>"; };
 		C08E1F8919170AC800EA702C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		C08E1F8B1917102700EA702C /* RootViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewControllerTableViewController.h; path = ../RootViewControllerTableViewController.h; sourceTree = "<group>"; };
-		C08E1F8C1917102700EA702C /* RootViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewControllerTableViewController.m; path = ../RootViewControllerTableViewController.m; sourceTree = "<group>"; };
-		C08E1F8E1917115500EA702C /* SubMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMenuViewController.h; sourceTree = "<group>"; };
-		C08E1F8F1917115500EA702C /* SubMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMenuViewController.m; sourceTree = "<group>"; };
-		C08E1F911917120900EA702C /* SearchCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCourseViewController.h; sourceTree = "<group>"; };
-		C08E1F921917120900EA702C /* SearchCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCourseViewController.m; sourceTree = "<group>"; };
 		C08E1F941917122300EA702C /* MapCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCourseViewController.h; sourceTree = "<group>"; };
 		C08E1F951917122300EA702C /* MapCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapCourseViewController.m; sourceTree = "<group>"; };
 		C08E1F971917123E00EA702C /* CalendarCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarCourseViewController.h; sourceTree = "<group>"; };
 		C08E1F981917123E00EA702C /* CalendarCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarCourseViewController.m; sourceTree = "<group>"; };
+		C08E1F9E19179F9000EA702C /* RootViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewControllerTableViewController.h; sourceTree = "<group>"; };
+		C08E1F9F19179F9000EA702C /* RootViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewControllerTableViewController.m; sourceTree = "<group>"; };
+		C08E1FA41917A44F00EA702C /* SearchCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCourseViewController.h; sourceTree = "<group>"; };
+		C08E1FA51917A44F00EA702C /* SearchCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCourseViewController.m; sourceTree = "<group>"; };
+		C0F1E8D11917C6D500E8F408 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = google.png; path = screenshots/google.png; sourceTree = "<group>"; };
+		C0F1E8D21917C6D500E8F408 /* root-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "root-menu.png"; path = "screenshots/root-menu.png"; sourceTree = "<group>"; };
+		C0F1E8D31917C6D500E8F408 /* storyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = storyboard.png; path = screenshots/storyboard.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 		C08E1F48191708CB00EA702C = {
 			isa = PBXGroup;
 			children = (
+				C0F1E8D01917C67900E8F408 /* screenshots */,
 				C08E1F8919170AC800EA702C /* README.md */,
 				C08E1F5A191708CB00EA702C /* navi */,
 				C08E1F79191708CB00EA702C /* naviTests */,
@@ -135,12 +139,10 @@
 				C08E1F951917122300EA702C /* MapCourseViewController.m */,
 				C08E1F63191708CB00EA702C /* NaviAppDelegate.h */,
 				C08E1F64191708CB00EA702C /* NaviAppDelegate.m */,
-				C08E1F8B1917102700EA702C /* RootViewControllerTableViewController.h */,
-				C08E1F8C1917102700EA702C /* RootViewControllerTableViewController.m */,
-				C08E1F911917120900EA702C /* SearchCourseViewController.h */,
-				C08E1F921917120900EA702C /* SearchCourseViewController.m */,
-				C08E1F8E1917115500EA702C /* SubMenuViewController.h */,
-				C08E1F8F1917115500EA702C /* SubMenuViewController.m */,
+				C08E1F9E19179F9000EA702C /* RootViewControllerTableViewController.h */,
+				C08E1F9F19179F9000EA702C /* RootViewControllerTableViewController.m */,
+				C08E1FA41917A44F00EA702C /* SearchCourseViewController.h */,
+				C08E1FA51917A44F00EA702C /* SearchCourseViewController.m */,
 				C08E1F5B191708CB00EA702C /* Supporting Files */,
 			);
 			path = navi;
@@ -173,6 +175,16 @@
 				C08E1F7C191708CB00EA702C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0F1E8D01917C67900E8F408 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				C0F1E8D11917C6D500E8F408 /* google.png */,
+				C0F1E8D21917C6D500E8F408 /* root-menu.png */,
+				C0F1E8D31917C6D500E8F408 /* storyboard.png */,
+			);
+			name = screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +264,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F1E8D51917C6D500E8F408 /* root-menu.png in Resources */,
 				C08E1F6D191708CB00EA702C /* Images.xcassets in Resources */,
 				C08E1F5F191708CB00EA702C /* InfoPlist.strings in Resources */,
 				C08E1F8A19170AC800EA702C /* README.md in Resources */,
+				C0F1E8D41917C6D500E8F408 /* google.png in Resources */,
+				C0F1E8D61917C6D500E8F408 /* storyboard.png in Resources */,
 				C08E1F68191708CB00EA702C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,12 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C08E1F961917122300EA702C /* MapCourseViewController.m in Sources */,
-				C08E1F901917115500EA702C /* SubMenuViewController.m in Sources */,
+				C08E1FA019179F9000EA702C /* RootViewControllerTableViewController.m in Sources */,
 				C08E1F65191708CB00EA702C /* NaviAppDelegate.m in Sources */,
+				C08E1FA61917A44F00EA702C /* SearchCourseViewController.m in Sources */,
 				C08E1F991917123E00EA702C /* CalendarCourseViewController.m in Sources */,
 				C08E1F61191708CB00EA702C /* main.m in Sources */,
-				C08E1F8D1917102700EA702C /* RootViewControllerTableViewController.m in Sources */,
-				C08E1F931917120900EA702C /* SearchCourseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +499,7 @@
 				C08E1F85191708CB00EA702C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C08E1F86191708CB00EA702C /* Build configuration list for PBXNativeTarget "naviTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +508,7 @@
 				C08E1F88191708CB00EA702C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

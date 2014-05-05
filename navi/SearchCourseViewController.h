@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SearchCourseViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 @end

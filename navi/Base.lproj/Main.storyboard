@@ -16,21 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="google" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3n-la-hVQ">
-                                <rect key="frame" x="142" y="267" width="53" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JNk-V4-dXL">
+                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NbL-7P-J5E">
+                                <rect key="frame" x="-8" y="60" width="328" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="戻る" id="3wK-fd-2YY">
+                                        <connections>
+                                            <action selector="goBack" destination="JNk-V4-dXL" id="7pg-2d-Ab2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="進む" id="Bjw-pV-Asf">
+                                        <connections>
+                                            <action selector="goForward" destination="JNk-V4-dXL" id="Yng-gb-AVB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pHT-wA-1Cq"/>
+                                    <barButtonItem title="再表示" id="0RB-gv-R2R">
+                                        <connections>
+                                            <action selector="reload" destination="JNk-V4-dXL" id="SHc-ss-OjQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="中断" id="juJ-ip-7YW">
+                                        <connections>
+                                            <action selector="stopLoading" destination="JNk-V4-dXL" id="dw8-xv-xLk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="検索" id="vLy-Gc-O5x"/>
+                    <connections>
+                        <outlet property="webView" destination="JNk-V4-dXL" id="Hli-iJ-R7a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7YY-iu-kSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="355" y="562"/>
+            <point key="canvasLocation" x="355" y="542"/>
         </scene>
         <!--Sub Menu View Controller - ナビゲーション-->
         <scene sceneID="IUx-Jo-9kO">
