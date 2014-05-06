@@ -15,3 +15,4 @@ See
  ![storyboard.png](screenshots/storyboard.png)  
  <img src="screenshots/root-menu.png" alt="root-menu.png.png" style="width: 300px;"/>
  <img src="screenshots/google.png" alt="google.png" style="width: 300px;"/>
+ <img src="screenshots/map.png" alt="map.png" style="width: 300px;"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02F9D2D19188FBC002E23A8 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = C02F9D2C19188FBC002E23A8 /* map.png */; };
 		C08E1F55191708CB00EA702C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08E1F54191708CB00EA702C /* Foundation.framework */; };
 		C08E1F57191708CB00EA702C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08E1F56191708CB00EA702C /* CoreGraphics.framework */; };
 		C08E1F59191708CB00EA702C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08E1F58191708CB00EA702C /* UIKit.framework */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C02F9D2C19188FBC002E23A8 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = screenshots/map.png; sourceTree = "<group>"; };
 		C08E1F51191708CB00EA702C /* navi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08E1F54191708CB00EA702C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C08E1F56191708CB00EA702C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				C0F1E8D11917C6D500E8F408 /* google.png */,
+				C02F9D2C19188FBC002E23A8 /* map.png */,
 				C0F1E8D21917C6D500E8F408 /* root-menu.png */,
 				C0F1E8D31917C6D500E8F408 /* storyboard.png */,
 			);
@@ -291,6 +294,7 @@
 				C08E1F6D191708CB00EA702C /* Images.xcassets in Resources */,
 				C08E1F5F191708CB00EA702C /* InfoPlist.strings in Resources */,
 				C0F1E8DE1918579A00E8F408 /* trackingFollow.png in Resources */,
+				C02F9D2D19188FBC002E23A8 /* map.png in Resources */,
 				C08E1F8A19170AC800EA702C /* README.md in Resources */,
 				C0F1E8E01918579A00E8F408 /* trackingNone.png in Resources */,
 				C0F1E8D41917C6D500E8F408 /* google.png in Resources */,
