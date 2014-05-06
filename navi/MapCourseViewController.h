@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MapCourseViewController : UIViewController
+
+// MapKitフレームワークをインポートする
+#import <MapKit/MapKit.h>
+// CoreLocationフレームワークをインポートする
+#import <CoreLocation/CoreLocation.h>
+
+// MKMapViewDelegateプロトコルの採用を宣言する
+@interface MapCourseViewController : UIViewController <MKMapViewDelegate>
 
 @end

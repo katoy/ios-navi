@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JNk-V4-dXL">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNk-V4-dXL">
                                 <rect key="frame" x="0.0" y="60" width="320" height="508"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NbL-7P-J5E">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbL-7P-J5E">
                                 <rect key="frame" x="-8" y="60" width="328" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
@@ -50,6 +50,15 @@
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JNk-V4-dXL" secondAttribute="bottom" id="BDK-1O-E4H"/>
+                            <constraint firstItem="LmA-xB-5zh" firstAttribute="top" secondItem="NbL-7P-J5E" secondAttribute="bottom" constant="464" id="IBG-1W-Qas"/>
+                            <constraint firstAttribute="trailing" secondItem="NbL-7P-J5E" secondAttribute="trailing" id="cIp-oh-1Yv"/>
+                            <constraint firstItem="NbL-7P-J5E" firstAttribute="trailing" secondItem="JNk-V4-dXL" secondAttribute="trailing" id="d1X-Yg-uD4"/>
+                            <constraint firstItem="JNk-V4-dXL" firstAttribute="leading" secondItem="p05-lT-OJO" secondAttribute="leading" id="hzn-gS-THK"/>
+                            <constraint firstItem="NbL-7P-J5E" firstAttribute="leading" secondItem="p05-lT-OJO" secondAttribute="leading" constant="-8" id="s75-6B-ijD"/>
+                            <constraint firstItem="NbL-7P-J5E" firstAttribute="top" secondItem="JNk-V4-dXL" secondAttribute="top" id="z4c-vh-3mj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="検索" id="vLy-Gc-O5x"/>
                     <connections>
@@ -105,17 +114,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="map" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBb-jx-yIi">
-                                <rect key="frame" x="104" y="262" width="34" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kL0-Oc-Vit">
+                                <rect key="frame" x="0.0" y="67" width="320" height="501"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X45-19-2v3">
+                                <rect key="frame" x="0.0" y="524" width="319" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="trackingNone.png" id="NWj-MB-PhJ">
+                                        <connections>
+                                            <action selector="tapTrakingButton:" destination="wba-Yt-Vpt" id="LNw-wT-zXk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TfH-2R-BoN"/>
+                                    <barButtonItem style="plain" id="9Rv-mh-9TN">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Tw2-sD-f6J">
+                                            <rect key="frame" x="79" y="7" width="161" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Std"/>
+                                                <segment title="Sat"/>
+                                                <segment title="Hyb"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="tapMapTypeSeg:" destination="wba-Yt-Vpt" eventType="valueChanged" id="4BD-Oo-iF3"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="j8B-Gx-vas"/>
+                                    <barButtonItem title="Spot" id="CLh-bg-RWA">
+                                        <connections>
+                                            <action selector="tapSpotButton:" destination="wba-Yt-Vpt" id="EhR-uX-bIc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X45-19-2v3" firstAttribute="bottom" secondItem="kL0-Oc-Vit" secondAttribute="bottom" id="7hs-W6-Hsh"/>
+                            <constraint firstItem="kL0-Oc-Vit" firstAttribute="top" secondItem="1da-XY-W21" secondAttribute="bottom" constant="3" id="CK7-C8-EAo"/>
+                            <constraint firstItem="kL0-Oc-Vit" firstAttribute="leading" secondItem="XXP-Bc-lYv" secondAttribute="leading" id="Jvx-qm-VoF"/>
+                            <constraint firstAttribute="trailing" secondItem="X45-19-2v3" secondAttribute="trailing" constant="1" id="KUX-af-KWu"/>
+                            <constraint firstAttribute="trailing" secondItem="kL0-Oc-Vit" secondAttribute="trailing" id="Wpq-CR-Sqh"/>
+                            <constraint firstAttribute="bottom" secondItem="kL0-Oc-Vit" secondAttribute="bottom" id="mzv-4k-Ilq"/>
+                            <constraint firstItem="X45-19-2v3" firstAttribute="leading" secondItem="kL0-Oc-Vit" secondAttribute="leading" id="r15-EZ-eAS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="地図" id="GfW-lF-bhU"/>
+                    <connections>
+                        <outlet property="myMapView" destination="kL0-Oc-Vit" id="v2X-1s-FBO"/>
+                        <outlet property="myToolbar" destination="X45-19-2v3" id="Kqx-PL-eld"/>
+                        <outlet property="trakingButton" destination="NWj-MB-PhJ" id="jAS-vG-dla"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vX8-s1-xW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,6 +249,9 @@
             <point key="canvasLocation" x="-678" y="-18"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="trackingNone.png" width="31" height="31"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
