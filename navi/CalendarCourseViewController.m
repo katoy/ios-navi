@@ -9,7 +9,7 @@
 #import "CalendarCourseViewController.h"
 
 @interface CalendarCourseViewController ()
-
+  @property (nonatomic, strong) NSMutableDictionary *data;
 @end
 
 @implementation CalendarCourseViewController
@@ -26,7 +26,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // 1. CKCalendarViewオブジェクトの作成
+    CKCalendarView *calendar = [CKCalendarView new];
+    
+    // 2. datasourceとdelegateの設定
+    [calendar setDelegate:self];
+    [calendar setDataSource:self];
+    
+    // 3. カレントビューの中で表示する
+    [[self view] addSubview:calendar];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,5 +54,28 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - CKCalendarViewDataSource
+
+- (NSArray *)calendarView:(CKCalendarView *)calendarView eventsForDate:(NSDate *)date
+{
+    return [self data][date];
+}
+
+#pragma mark - CKCalendarViewDelegate
+
+// Called before/after the selected date changes
+- (void)calendarView:(CKCalendarView *)CalendarView willSelectDate:(NSDate *)date
+{
+}
+
+- (void)calendarView:(CKCalendarView *)CalendarView didSelectDate:(NSDate *)date
+{
+}
+
+//  A row is selected in the events table. (Use to push a detail view or whatever.)
+- (void)calendarView:(CKCalendarView *)CalendarView didSelectEvent:(CKCalendarEvent *)event
+{
+}
 
 @end
