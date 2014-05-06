@@ -34,6 +34,8 @@
     [calendar setDelegate:self];
     [calendar setDataSource:self];
     
+    calendar.frame = CGRectMake(0, 60, 320, 502);
+    
     // 3. カレントビューの中で表示する
     [[self view] addSubview:calendar];
 }
